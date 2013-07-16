@@ -123,8 +123,138 @@
                         </li>           
         </ul>
 
+<<<<<<< HEAD
+<div>
+	<div class="ink-container">
+		<nav class="ink-navigation ink-collapsible ink-dockable" data-fixed-height="44">
+			<ul class="menu horizontal black ink-l100 ink-m100 ink-s100">
+				<li class="active"><a class="scrollableLink home" href="typography.html#nav-home">
+					<i class="icon-chevron-up ink-for-l"></i>
+					<span class="ink-for-m ink-for-s">Back to Top</span>
+				</a></li>
+				<li><a class="scrollableLink" href="typography.html#nav-fonts">Fonts</a></li>
+				<li><a class="scrollableLink" href="typography.html#nav-headings">Headings</a></li>
+				<li><a class="scrollableLink" href="typography.html#nav-body-hypertext">Body & Hypertext</a></li>
+				<li><a class="scrollableLink" href="typography.html#nav-lists">Lists</a></li>
+				<li><a class="scrollableLink" href="typography.html#nav-utilities">Utility Classes</a></li>
+				<li><a class="scrollableLink" href="typography.html#nav-additional">Additional Elements</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+<!--menu_end-->
+<div class="ink-container">
+	<!--fonts_start-->
+	<div class="ink-section" id="nav-fonts">
+		<h2>Fonts</h2>
+		<p>Ink offers you a simple and elegant base style for text with a clear hierarchy and flexible, generic styling for all types of typographical composition you may need.</p>
+		<p>Ink's typography is designed to create a strong hierarchy with basic styles. We distribute the open source Ubuntu font family for a modern fresh look, but you can opt for non-webfont solutions and choose from three basic font stacks.</p>
+		<div class="ink-row ink-vspace">
+			<div class="ink-l60">
+				<div class="ink-gutter">
+                    <h3>Ubuntu</h3>
+                    <p>Ink's default font stack starts with the Ubuntu webfont. Make sure you can serve up the font files from your server, they are free to use and redistribute. If you can't, it's ok, the stack will default to Arial, then Helvetica, and finally, the system's default sans-serif. The stack is:</p>
+                    <p><code>font-family: Ubuntu, Arial, Helvetica, Sans-serif;</code></p>
+                    <h3>Sans-serif</h3>
+                    <p>If you prefer a system font, sans-serif option, change the font-family option to <code>font-family: Sans-serif;</code></p>
+                    <h3>Serif font</h3>
+                    <p>For a serif option, we went with Georgia, which is readily available and quite versatile. We suggest you simply use <code>font-family: Georgia, Serif;</code></p>
+                    <p><span class="ink-label info">tip</span> You may have noticed we went with very basic font-family declarations for the serif and sans-serif options, that just makes your life easier by defaulting to the user agent fonts and potentially serve up the most adequate font for the job in each system. Simplifying this will probably save you headaches down the road. Of course, if you have particular typography needs, feel free to experiment and configure the font-family as you see fit.</p>
+				</div>
+			</div>
+			<div class="ink-l40">
+				<div class="ink-gutter">
+					<h3>Examples</h3>
+					<h5>Ubuntu font stack</h5>
+					<ul>
+						<li>Ubuntu</li>
+						<li>Arial</li>
+						<li>Helvetica</li>
+						<li>Sans-serif</li>
+					</ul>
+					<h5>Sans serif font stack</h5>
+					<ul>
+						<li>Sans-serif</li>
+					</ul>
+					<h5>Serif font stack</h5>
+					<ul>
+						<li>Georgia</li>
+						<li>Serif</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--fonts_end-->
+	<!--headings_start-->
+	<div class="ink-section" id="nav-headings">
+		<div class="ink-row">
+			<div class="ink-l60">
+				<div class="ink-gutter">
+					<h2>Headings</h2>
+					<p>Headings are essential for defining your blocks of text. Use your h1 for a site-wide identifier, such as the logo, use the h2 as page title, and try to keep it to a single h2 per page, and then build your hierarchy of blocks using h3-h6.</p>
+					<p>Ink defines default font-size, line-height and margins for each heading level to cleanly match the body text and maximize readability.</p>
+				</div>
+			</div>
+			<div class="ink-l40">
+				<div class="ink-gutter">
+					<h1>&lt;h1&gt;Title 1&lt;/h1&gt;</h1>
+					<h2>&lt;h2&gt;Title 2&lt;/h2&gt;</h2>
+					<h3>&lt;h3&gt;Title 3&lt;/h3&gt;</h3>
+					<h4>&lt;h4&gt;Title 4&lt;/h4&gt;</h4>
+					<h5>&lt;h5&gt;Title 5&lt;/h5&gt;</h5>
+					<h6>&lt;h6&gt;Title 6&lt;/h6&gt;</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--headings_end-->
+	<!--body&hypertext_start-->
+	<div class="ink-section" id="nav-body-hypertext">
+		<h2>Body & Hypertext</h2>
+		<p>Body text is the most basic unit of text you can define. Always use <code>&lt;p&gt;</code> for your paragraphs and Ink takes care of font-size, line-height and proper margins.</p>
+		<div class="ink-row ink-vspace">
+			<div class="ink-l75 ink-m75 ink-s100">
+				<div class="ink-gutter">
+					<h4>Emphasis</h4>
+					<p>For emphasis use either <code>&lt;em&gt;</code> or <code>&lt;i&gt;</code> to obtain <em>italicized</em> type and <code>&lt;strong&gt;</code> or <code>&lt;b&gt;</code> to obtain <strong>bold</strong> type. If you need further emphasis, the <code>&lt;mark&gt;</code> HTML5 tag renders a simple text highlight.</p>
+					<h4>Hypertext</h4>
+					<p>Hypertext is the fundament of the web. Ink renders all four states of link text as can be seen on the example on the right. Simply use the anchor, <code>&lt;a&gt;</code> tag. You can customize link appearance in the <a href="download.html">Ink configurator</a>, using your own custom CSS or, if you're a more advanced user, editing the conf.less file.</p>
+					<h4>Notes</h4>
+					<p>If you need to add side notes to your text, apply the utility class <code>.note</code> to your paragraphs to get smaller, faded text.</p>
+				</div>
+			</div>
+			<div class="ink-l25 ink-m25 ink-s100">
+				<div class="ink-gutter">
+				<h4>Emphatic elements</h4>
+				<ul class="unstyled">
+					<li><em>Italicized</em></li>
+					<li><strong>Bold</strong></li>
+					<li><mark>Highlighted</mark></li>
+				</ul>
+				<h4>Hyperlinks</h4>
+					<ul class="unstyled">
+						<li><a href="typography.html#">Normal</a></li>
+						<li><a href="typography.html#" class="visited">Visited</a></li>
+						<li><a href="typography.html#" class="active">Active</a></li>
+						<li><a href="typography.html#" class="hover">Hover</a></li>
+					</ul>
+				<h4>Note text</h4>
+				<p>This is normal body text.</p>
+				<p class="note">This is a note.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--body&hypertext_end-->
+	<!--lists_start-->
+	<div class="ink-section" id="nav-lists">
+		<h2>Lists</h2>
+		<p>There are four basic list styles defined in Ink, which correspond to the most widely used HTML list formats and also include an unstyled list format.</p>
+=======
         <ul class="menu vertical flat black hide-all" id="topbar_menu">
                                                     <li >
+>>>>>>> origin/develop
 
                                 <a href="http://ink.sapo.pt/getting-started">Getting started</a>
                     
@@ -215,7 +345,7 @@
 body {
   font-family: font1, font2, font3; &lt;!--Your font stack here--&gt;
 }                </pre>
-                <p>If you want, you can also edit the __typography.less file in the ./less/config/ folder and alter these values:</p>
+                <p>If you want, you can also edit the <mark>__typography.less</mark> file in the <mark>./less/config/</mark> folder and alter these values:</p>
                 <p><span class="ink-label info">Code</span></p>
                 <pre class="prettyprint linenums">
 // sans-serif font stack
@@ -279,7 +409,7 @@ body {
                         <li><a href="#" class="hover">Hover</a></li>
                     </ul>
                 </div>
-                <p>To customize these colors to match your design, either set up your custom CSS or edit the appropriate __colors.less file in the ./less/config/ folder, and change these values:</p>
+                <p>To customize these colors to match your design, either set up your custom CSS or edit the appropriate <mark>__colors.less</mark> file in the <mark>./less/config/</mark> folder, and change these values:</p>
                 <p><span class="ink-label info">Code</span></p>
                 <pre class="prettyprint linenums">
 // LINKS
@@ -491,6 +621,47 @@ body {
 &lt;h6&gt;SAPO&lt;/h6&gt;
 &lt;p&gt;Av. Fontes Pereira de Melo, 40&lt;br&gt;1050 Lisboa&lt;/p&gt;
 &lt;/address&gt;</pre>
+<<<<<<< HEAD
+						<address>
+							<h6>SAPO</h6>
+							<p>Av. Fontes Pereira de Melo, 40<br>1050 Lisboa</p>
+						</address>
+					</div>
+				</div>
+			</div>
+		<!--additionalelements_end-->
+	</div>
+</div>
+<footer>
+	<div class="ink-container">
+		<div class="ink-l75">
+			<nav class="ink-navigation">
+				<ul class="ink-footer-nav">
+					<li><a href="about.html">About</a></li>
+					<li><a href="changelog.html">Changelog</a></li>
+                    <li>Ink's code licensed under <a rel="license" href="http://opensource.org/licenses/MIT">MIT</a>, <abbr title="documentation">docs</abbr> under <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">cc-by-nc</a></li>
+                    
+				</ul>
+			</nav>	
+			<a class="SAPOlogo" href="http://www.sapo.pt">sapo.pt</a>
+			
+			<p class="ink-vspace copyright">
+				<a class="PTClogo" href="http://www.telecom.pt">PTC logo</a>PTC - All rights reserved.<br />
+				SAPO is a trademark and a search engine created at the University of Aveiro.
+			</p>
+			
+		</div>
+		
+		<div class="ink-l25">
+			<ul class="sociallinks">
+				<h5>Follow SAPO:</h5>
+				<li><a class="Fb_link" href="http://www.facebook.com/inksapo"></a></li>
+				<li><a class="Twt_link" href="http://twitter.com/inksapo"></a></li>
+				<li><a class="Gplus_link" href="https://plus.google.com/111905015404301701945/posts"></a></li>
+			</ul>
+		</div>
+	</div>
+=======
                 <p><span class="ink-label success">Example</span></p>
                 <div class="box">
                     <address>
@@ -562,6 +733,7 @@ body {
             </ul>
         </div>
     </div>
+>>>>>>> origin/develop
 </footer>
             <script type="text/javascript" src="http://js.sapo.pt/SAPOWebAnalytics/"></script>         
     <script> 

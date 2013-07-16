@@ -240,6 +240,135 @@
         &lt;/ul&gt;
       &lt;/li&gt;
    &lt;/ul&gt;
+<<<<<<< HEAD
+&lt;/nav&gt;</pre>
+
+		</div>
+
+	</div>
+
+
+
+
+
+	<div class="ink-section" id="nav-vertical">
+
+		<h3>Vertical menu</h3>
+		<div class="ink-row ink-vspace">
+
+			<div class="ink-l40">
+				<div class="ink-gutter">
+					<nav class="ink-navigation">
+						<ul class="menu vertical">
+							<li><a href="navigation.html#">Suspendisse</a></li>
+							<li><a href="navigation.html#">Vivamus</a></li>
+							<li><a href="navigation.html#">Condimentum</a></li>
+							<li><a href="navigation.html#">Ccommodo</a></li>
+							<li><a href="navigation.html#">Egestas</a></li>
+							<li>
+								<a href="navigation.html#">Submenu<i class="icon-caret-right ink-for-l"></i><i class="icon-caret-down ink-for-s ink-for-m"></i></a>
+								<ul class="submenu">
+									<li><a href="navigation.html#">Item with a very big title</a></li>
+									<li><a href="navigation.html#">Item</a></li>
+									<li><a href="navigation.html#">Item</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<div class="ink-l60">
+				<div class="ink-gutter">
+					<p>Vertical menus are built exactly the same way as the horizontal ones, just use the <code>&lt;ul&gt;</code>  with the <code>.vertical</code> class. The same goes for the submenus.</p>
+					<pre class="prettyprint linenums">
+&lt;nav class=&quot;ink-navigation&quot;&gt;
+	&lt;ul class=&quot;menu vertical&quot;&gt;
+	  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+	  ...
+	  &lt;li&gt;
+		 &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+		 &lt;ul class=&quot;submenu&quot;&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;SubItem&lt;/a&gt;&lt;/li&gt;
+			...
+		 &lt;/ul&gt;
+	  &lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;</pre>
+					 </div>
+				</div>
+		  </div>
+	 </div>
+	 <!--<div class="ink-section" id="nav-footer">
+		  <h3>
+				Footer menu
+		  </h3>
+		  <p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+		  </p>
+		  <pre class="prettyprint linenums">
+&lt;footer&gt;
+	&lt;ul class=&quot;ink-footer-nav&quot;&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;footerItem&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;footerItem&lt;/a&gt;&lt;/li&gt;
+		...
+	&lt;/ul&gt;
+&lt;/footer&gt;</pre>
+	 </div>-->
+	 <div class="ink-section" id="nav-pagination">
+		  <h3>
+				Pagination
+		  </h3>
+		  <p>
+				Paginations can be created by adding the <code>pagination</code> class to a list inside an <code>ink-navigation</code> parent. The <code>.active</code> and <code>.disabled</code> classes are available to differentiate the current page and disabled links.
+		  </p>
+		  <h4>
+				Example
+		  </h4>
+		  <nav class="ink-navigation">
+				<ul class="pagination">
+					 <li class="disabled previous">
+						  <a href="navigation.html#">Previous</a>
+					 </li>
+					 <li>
+						  <a href="navigation.html#">1</a>
+					 </li>
+					 <li>
+						  <a href="navigation.html#">2</a>
+					 </li>
+					 <li>
+						  <a href="navigation.html#">3</a>
+					 </li>
+					 <li class="active">
+						  <a href="navigation.html#">4</a>
+					 </li>
+					 <li>
+						  <a href="navigation.html#">5</a>
+					 </li>
+					 <li>
+						  <a href="navigation.html#">6</a>
+					 </li>
+					 <li>
+						  <a href="navigation.html#">7</a>
+					 </li>
+					 <li class="next">
+						  <a href="navigation.html#">Next</a>
+					 </li>
+				</ul>
+		  </nav>
+		  <pre class="prettyprint linenums ink-vspace">
+&lt;nav class=&quot;ink-navigation&quot;&gt;
+   &lt;ul class=&quot;pagination&quot;&gt;
+      &lt;li class=&quot;disabled previous&quot;&gt;&lt;a href=&quot;#&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;6&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;7&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;next&quot;&gt;&lt;a href=&quot;#&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+=======
 &lt;/nav&gt;</pre>                
             </section>
             <section id="nav-styling" data-spy="true" data-target="#nav_menu">
@@ -445,6 +574,7 @@
    &lt;ul class=&quot;menu vertical&quot;&gt;
       &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+>>>>>>> origin/develop
    &lt;/ul&gt;
 &lt;/nav&gt;</pre>                
             </section>
@@ -727,6 +857,36 @@
 </div>
 
 <footer>
+<<<<<<< HEAD
+	<div class="ink-container">
+		<div class="ink-l75">
+			<nav class="ink-navigation">
+				<ul class="ink-footer-nav">
+					<li><a href="about.html">About</a></li>
+					<li><a href="changelog.html">Changelog</a></li>
+                    <li>Ink's code licensed under <a rel="license" href="http://opensource.org/licenses/MIT">MIT</a>, <abbr title="documentation">docs</abbr> under <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">cc-by-nc</a></li>
+                    
+				</ul>
+			</nav>	
+			<a class="SAPOlogo" href="http://www.sapo.pt">sapo.pt</a>
+			
+			<p class="ink-vspace copyright">
+				<a class="PTClogo" href="http://www.telecom.pt">PTC logo</a>PTC - All rights reserved.<br />
+				SAPO is a trademark and a search engine created at the University of Aveiro.
+			</p>
+			
+		</div>
+		
+		<div class="ink-l25">
+			<ul class="sociallinks">
+				<h5>Follow SAPO:</h5>
+				<li><a class="Fb_link" href="http://www.facebook.com/inksapo"></a></li>
+				<li><a class="Twt_link" href="http://twitter.com/inksapo"></a></li>
+				<li><a class="Gplus_link" href="https://plus.google.com/111905015404301701945/posts"></a></li>
+			</ul>
+		</div>
+	</div>
+=======
     <div class="ink-grid">
         <div class="socialplugins">
             <div class="column-group gutters">
@@ -786,6 +946,7 @@
             </ul>
         </div>
     </div>
+>>>>>>> origin/develop
 </footer>
             <script type="text/javascript" src="http://js.sapo.pt/SAPOWebAnalytics/"></script>         
     <script> 

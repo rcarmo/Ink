@@ -146,10 +146,17 @@
             </li>
                                                                 <li >
 
+<<<<<<< HEAD
+        <p class="ink-alert"><strong>Warning</strong> customization comes at a price: when we update Ink in the future you'll have to repeat any customization made on the file we provide. We usually advise you to keep your changes in a separate file,
+          but in this case, you can't do that.</p>
+        <p>If you do decide to customize the breakpoints provided, you can do this by <strong>editing the <code>ink.css</code> by hand</strong> and changing the values on those media-queries. (A regular search in the file for " SCREENS" will get you there).</p>
+        <p><strong>Coming soon</strong>, we'll add breakpoint customization to your fantastic <a href="download.html">Ink Customizer</a>.</p>
+=======
                                 <a href="http://ink.sapo.pt/icons">Icons</a>
                     
             </li>
                                                                 <li >
+>>>>>>> origin/develop
 
                                 <a href="http://ink.sapo.pt/forms">Forms</a>
                     
@@ -538,6 +545,11 @@
 
 /* INK: SMALL SCREENS - DISABLED */
 @media screen and (max-width: 0px) {
+<<<<<<< HEAD
+(...)        </pre>
+        <p>Boom. Done. Now you only have to use the large class names (see <a href="layout.html#columns">columns section</a>).</p>
+
+=======
 (...)                 </pre>
             </section>
             <section id="nav-showhide" data-spy="true" data-target="#layout_menu">
@@ -586,6 +598,7 @@
 &lt;/div&gt;                </pre>
             </section>
         </div>
+>>>>>>> origin/develop
     </div>
 </div>
 <footer>
@@ -606,6 +619,84 @@
                 </div>
                 
             </div>
+<<<<<<< HEAD
+		<div class="ink-vspace">
+      <p>
+				You should use the <code>ink-lxx</code>, <code>ink-mxx</code> and <code>ink-sxx</code> class names only to specify the container width in the various screen sizes (large, medium or small), as shown in the examples above.
+				The purpose of these classes should be layout only.
+			</p>
+			<p>
+				For further customization add an additional semantic class.
+			</p>
+		</div>
+	</div>
+
+      <div class="ink-section" id="nav-gutters">
+         <div class="ink-vspace">
+			   <h2>Gutters</h2>
+    	     <p>To create gutters on you Ink based pages you need to wrap the elements that define column width in a <code>div</code> element with an <code>ink-row</code> class, and add another <code>div</code> element inside the columns wrapping all of its content with an <code>ink-gutter</code> class.</p>
+        	 <p>If you need to add vertical space between the layout rows, simply add the <code>.ink-vspace</code> class to the <code>ink-row</code> wrapper.</p>
+        	 <p>Gutter size changes proportionally to the screen size, so there's no waste of space!</p>
+         </div>
+		    <div class="gridExample2">
+            <div class="box">
+               <div class="level1">
+                  <div class="ink-l100 level2">
+                     <p>100%</p>
+                  </div>
+                     <div class="ink-row ink-vspace">
+                        <div class="ink-l50 ink-m50 ink-s50 level2">
+                              <div class="ink-gutter">
+                                 <p>50%</p>
+                              </div>
+                        </div>
+                        <div class="ink-l50 ink-m50 ink-s50 level2">
+                              <div class="ink-gutter">
+                                 <p>50%</p>
+                              </div>
+                        </div>
+                     </div>
+                  <div class="ink-row ink-vspace">
+                     <div class="ink-l33 ink-m33 ink-s33 level2">
+                        <div class="ink-gutter">
+                           <p>33%</p>
+                        </div>
+                     </div>
+                     <div class="ink-l33 ink-m33 ink-s33 level2">
+                        <div class="ink-gutter">
+                           <p>33%</p>
+                        </div>
+                     </div>
+                     <div class="ink-l33 ink-m33 ink-s33 level2">
+                        <div class="ink-gutter">
+                           <p>33%</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ink-row ink-vspace">
+                     <div class="ink-l25 ink-m25 ink-s25 level2">
+                        <div class="ink-gutter">
+                           <p>25%</p>
+                        </div>
+                     </div>
+                     <div class="ink-l25 ink-m25 ink-s25 level2">
+                        <div class="ink-gutter">
+                           <p>25%</p>
+                        </div>
+                     </div>
+                     <div class="ink-l25 ink-m25 ink-s25 level2">
+                        <div class="ink-gutter">
+                           <p>25%</p>
+                        </div>
+                     </div>
+                     <div class="ink-l25 ink-m25 ink-s25 level2">
+                        <div class="ink-gutter">
+                           <p>25%</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+=======
         </div>
         
         <div class="large-70 medium-70 small-100">
@@ -628,6 +719,7 @@
                     <a href="http://www.telecom.pt">PTC logo</a>PTC - All rights reserved.<br />
                     SAPO is a trademark and a search engine created at the University of Aveiro.
                 </p>
+>>>>>>> origin/develop
             </div>
             
         </div>
@@ -648,6 +740,102 @@
             </ul>
         </div>
     </div>
+<<<<<<< HEAD
+
+	<div class="ink-section" id="nav-spacing">
+		<div class="ink-vspace">
+			<h2>Spacing</h2>
+			<p>
+				Since Ink's approach to layout is not grid-based, but space division based, we needed to keep things simple spacing wise.
+				Despite meaning the need for extra markup elements, we feel the gained simplicity means you can build stuff faster and easier.
+			</p>
+			<p>
+				Ink uses seven kinds of spacer unit: a vertical spacer, an horizontal spacer, and all-around spacer and one for each side of your box (top, right, bottom, left).
+				To use them, put a block-level element within your layout element with the corresponding spacer class.
+			</p>
+		</div>
+      <div class="ink-row">
+         <div class="ink-l33">
+            <div class="ink-gutter">
+               <div class="box">
+                  <div class="ink-vspace"><p>.ink-vspace</p></div>
+               </div>
+<pre class="prettyprint linenums ink-vspace">
+&lt;!--Sets width to 33%--&gt;
+&lt;div class=&quot;ink-l33&quot;&gt;
+   &lt;!--Adds vertical margins--&gt;
+   &lt;div class=&quot;ink-vspace&quot;&gt;
+      ...
+   &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+         </div>
+         <div class="ink-l33">
+            <div class="ink-gutter">
+               <div class="box">
+                  <div class="ink-hspace"><p>.ink-hspace</p></div>
+               </div>
+<pre class="prettyprint linenums ink-vspace">
+&lt;!--Sets width to 33%--&gt;
+&lt;div class=&quot;ink-l33&quot;&gt;
+   &lt;!--Adds horizontal margins--&gt;
+   &lt;div class=&quot;ink-hspace&quot;&gt;
+      ...
+   &lt;/div&gt;
+&lt;/div&gt;</pre>
+         </div>
+      </div>
+         <div class="ink-l33">
+            <div class="ink-gutter">
+               <div class="box">
+                  <div class="ink-space"><p>.ink-space</p></div>
+               </div>
+<pre class="prettyprint linenums ink-vspace">
+&lt;!--Sets width to 33%--&gt;
+&lt;div class=&quot;ink-l33&quot;&gt;
+   &lt;!--Adds margins--&gt;
+   &lt;div class=&quot;ink-space&quot;&gt;
+      ...
+   &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+
+         </div>
+      </div>
+   </div>
+
+</div>
+<footer>
+	<div class="ink-container">
+		<div class="ink-l75">
+			<nav class="ink-navigation">
+				<ul class="ink-footer-nav">
+					<li><a href="about.html">About</a></li>
+					<li><a href="changelog.html">Changelog</a></li>
+                    <li>Ink's code licensed under <a rel="license" href="http://opensource.org/licenses/MIT">MIT</a>, <abbr title="documentation">docs</abbr> under <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">cc-by-nc</a></li>
+                    
+				</ul>
+			</nav>	
+			<a class="SAPOlogo" href="http://www.sapo.pt">sapo.pt</a>
+			
+			<p class="ink-vspace copyright">
+				<a class="PTClogo" href="http://www.telecom.pt">PTC logo</a>PTC - All rights reserved.<br />
+				SAPO is a trademark and a search engine created at the University of Aveiro.
+			</p>
+			
+		</div>
+		
+		<div class="ink-l25">
+			<ul class="sociallinks">
+				<h5>Follow SAPO:</h5>
+				<li><a class="Fb_link" href="http://www.facebook.com/inksapo"></a></li>
+				<li><a class="Twt_link" href="http://twitter.com/inksapo"></a></li>
+				<li><a class="Gplus_link" href="https://plus.google.com/111905015404301701945/posts"></a></li>
+			</ul>
+		</div>
+	</div>
+=======
+>>>>>>> origin/develop
 </footer>
             <script type="text/javascript" src="http://js.sapo.pt/SAPOWebAnalytics/"></script>         
     <script> 

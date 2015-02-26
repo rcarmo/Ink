@@ -1,44 +1,13 @@
 $fonts: (
   (
-    Roboto,
-    roboto,
-    (
-      (thin,100,normal),
-      (thinitalic,100,italic),
-      (light,300,normal),
-      (lightitalic,300,italic),
-      (regular,400,normal),
-      (italic,400,italic),
-      (medium,500,normal),
-      (mediumitalic,500,italic),
-      (bold,700,normal),
-      (bolditalic,700,italic),
-      (black,900,normal),
-      (blackitalic,900,italic)
-    )
-  ),
-  (
-    Roboto_condensed,
-    robotocondensed,
+    Vegur,
+    vegur,
     (
       (light,300,normal),
-      (lightitalic,300,italic),
       (regular,400,normal),
-      (italic,400,italic),
       (bold,700,normal),
-      (bolditalic,700,italic)
     )
   ),
-  (
-    Roboto_slab,
-    robotoslab,
-    (
-      (thin,100,(normal)),
-      (light,300,(normal)),
-      (regular,400,(normal)),
-      (bold,700,(normal))
-    )
-  )
 );
 
 @each $font in $fonts {
@@ -53,7 +22,7 @@ $fonts: (
 
     @include font-face(
         #{$font-name},
-        font-files("#{$font-name}/#{$font-file-prefix}-#{$weight-name}-webfont.woff","#{$font-name}/#{$font-file-prefix}-#{$weight-name}-webfont.ttf"),
+        font-files("#{$font-name}/#{$font-file-prefix}-#{$weight-name}-webfont.woff","#{$font-name}/#{$font-file-prefix}-#{$weight-name}-webfont.woff2","#{$font-name}/#{$font-file-prefix}-#{$weight-name}-webfont.ttf","#{$font-name}/#{$font-file-prefix}-#{$weight-name}-webfont.svg"),
         "#{$font-name}/#{$font-file-prefix}-#{$weight-name}-webfont.eot",
         #{$weight},
         #{$style}

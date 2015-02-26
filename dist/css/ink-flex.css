@@ -880,7 +880,7 @@ th {
 .ink-form .control-group .control.append-symbol span > [class^="fa-"], .ink-form .control-group .control.append-symbol span > [class*=" fa-"] {
   position: absolute;
   right: 1em;
-  top: .86em;
+  top: .56em;
   pointer-events: none;
 }
 .ink-form .control-group .control.prepend-symbol span {
@@ -892,7 +892,7 @@ th {
 .ink-form .control-group .control.prepend-symbol span > [class^="fa-"], .ink-form .control-group .control.prepend-symbol span > [class*=" fa-"] {
   position: absolute;
   left: 1em;
-  top: .86em;
+  top: .56em;
   pointer-events: none;
 }
 .ink-form .control-group input[type="radio"],
@@ -940,8 +940,8 @@ th {
   color: #555;
 }
 .ink-form .control-group.required label:after, .ink-form .control-group.required p.label:after {
-  content: "\f069";
-  color: #c91111;
+  content: "\f111";
+  color: #0f75da;
   margin-left: .6em;
   font-family: FontAwesome;
   font-size: .75em;

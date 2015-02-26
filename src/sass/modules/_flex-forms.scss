@@ -215,7 +215,7 @@
                     & > [class*=" fa-"] {
                         position: absolute;
                         right: 1em;
-                        top: .86em;
+                        top: .56em;
                         pointer-events: none;
                     }
                 }
@@ -237,7 +237,7 @@
                     & > [class*=" fa-"] {
                         position: absolute;
                         left: 1em;
-                        top: .86em;
+                        top: .56em;
                         pointer-events: none;
                     }
                 }
@@ -306,8 +306,8 @@
                 color: $text-color;
 
                 &:after {
-                    content: "\f069";
-                    color: $error-bg;
+                    content: "\f111";
+                    color: $info-bg;
                     margin-left: .6em;
                     font-family: FontAwesome;
                     font-size: .75em;
